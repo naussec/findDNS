@@ -31,11 +31,7 @@ var rootCmd = &cobra.Command{
 	Use:   "findDNS",
 	Short: "Search for DNS Records by web address",
 	Long: `Search for IP address and Name Servers by webaddress.
-For example: google.com -n (will provide you with googles Name Server)
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+For example: google.com -n (will provide you with googles Name Server)`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	Run: func(cmd *cobra.Command, args []string) {

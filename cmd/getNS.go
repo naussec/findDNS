@@ -26,11 +26,7 @@ var getNSCmd = &cobra.Command{
 	Use:   "getNS",
 	Short: "Provides Name Server of given web address",
 	Long: `Search for IP address and Name Servers by webaddress.
-	For example: google.com -getNS (will provide you with googles Name Server)
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	For example: google.com -getNS (will provide you with googles Name Server)`,
 	Run: func(cmd *cobra.Command, args []string) {
 		nameserver, _ := net.LookupNS(webAddress)
 	for _, ns := range nameserver {

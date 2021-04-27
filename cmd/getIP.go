@@ -26,11 +26,7 @@ var getIPCmd = &cobra.Command{
 	Use:   "getIP",
 	Short: "Provides IP of given web address",
 	Long: `Search for IP address and Name Servers by webaddress.
-	For example: google.com -getIP (will provide you with googles IP Address)
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	For example: google.com -getIP (will provide you with googles IP Address)`,
 	Run: func(cmd *cobra.Command, args []string) {
 		iprecords, _ := net.LookupIP(webAddress)
 		for _, ip := range iprecords {
