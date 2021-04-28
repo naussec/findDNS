@@ -17,9 +17,10 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
 	"net"
+	"github.com/spf13/cobra"
 )
+
 
 // getIPCmd represents the getIP command
 var getIPCmd = &cobra.Command{
